@@ -9,6 +9,8 @@ if input_month not in valid_months:
     print("Invalid")
 elif (input_day < 1) or (input_day > 31):
     print("Invalid")
+elif input_month == "September" and input_day == 31:
+    print("Invalid")
 else:
     if ((input_month == "March" and input_day >= 20) or
         (input_month in ["April","May"]) or
