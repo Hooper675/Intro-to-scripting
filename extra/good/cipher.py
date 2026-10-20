@@ -1,6 +1,6 @@
 
 # user_input = prompt inputs
-# empty text variable
+#empty text
 #while prompt_user provide a negative number or greater than 25:
 # prompt_user to enter a correct digit.
 #break
@@ -25,7 +25,7 @@ for i in user_input:
         code = ord(i) + prompt_user
         if i.isupper() and code > ord('Z'):
             code -=26
-        elif i.lower and code < ord('z'):
+        elif i.lower and code > ord('z'):
             code -=26
         text += chr(code)
     else:
